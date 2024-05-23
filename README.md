@@ -1,3 +1,1 @@
 # budgeting-app
-
-**dicks**
