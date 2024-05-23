@@ -77,7 +77,7 @@ export default function Sidebar() {
                     />
                     <MenuItem
                         name="Log Out"
-                        route="/logout"
+                        route="/api/auth/login"
                         icon={<FaSignOutAlt />}
                     />
                 </div>
