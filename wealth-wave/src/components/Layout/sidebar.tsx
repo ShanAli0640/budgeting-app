@@ -18,24 +18,25 @@ export default function Sidebar() {
         let colorClass = "text-white/50 hover:text-white";
         const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
 
-        if (currentPath === route){
+        if (currentPath === route) {
             colorClass = "text-white";
         }
 
         return (
             <Link
                 href={route}
+                passHref
                 className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
             >
-                <div className="text-2xl flex [&>*]:mx-auto w-12"> {/* Adjusted icon size here */}
-                    {icon}
-                </div>
-                <div className="pl-2">{name}</div>
+                    <div className="text-2xl flex [&>*]:mx-auto w-12"> {/* Adjusted icon size here */}
+                        {icon}
+                    </div>
+                    <div className="pl-2">{name}</div>
             </Link>
         )
     }
 
-    return ( 
+    return (
         <>
             <div className={`${className}`}>
                 <div className="p-2 flex">
