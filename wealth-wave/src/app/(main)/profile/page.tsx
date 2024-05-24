@@ -2,6 +2,7 @@
 import React from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import { redirect } from "next/navigation";
+import Layout from '../../../components/Layout/index';
 
 export default function profile() {
 
@@ -11,10 +12,10 @@ export default function profile() {
 
     if (user) {
         return (
-            <div>
-                <h1> Hello {user.nickname} </h1>
-                <p> {user.name} </p>
-            </div>
+            <Layout>
+                    <h1> Hello {user.nickname} </h1>
+                    <p> {user.name} </p>
+            </Layout>
         );
     }
 
