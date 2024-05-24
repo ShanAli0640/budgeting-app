@@ -1,11 +1,10 @@
 import React from 'react'
-import TemplatePage from '../../../components/templatePage'
+import Layout from '../../../components/Layout/index';
 
 export default function HomePage() {
     return (
-        <>
-            <TemplatePage title="Dashboard" />
-            <a href="/api/auth/logout">yo</a>
-        </>
+        <Layout>
+            <h1>Dashboard</h1>
+        </Layout>
     )
 }

@@ -77,7 +77,7 @@ export default function Sidebar() {
                         icon={<FaQuestionCircle />}
                     />
                     <MenuItem
-                        name="Log Out"
+                        name="Options"
                         route="/logout"
                         icon={<FaSignOutAlt />}
                     />
