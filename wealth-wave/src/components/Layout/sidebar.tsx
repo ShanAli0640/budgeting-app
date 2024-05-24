@@ -67,18 +67,8 @@ export default function Sidebar() {
                         icon={<FaChartBar />}
                     />
                     <MenuItem
-                        name="Settings"
-                        route="/setting"
-                        icon={<FaCog />}
-                    />
-                    <MenuItem
-                        name="Help"
-                        route="/help"
-                        icon={<FaQuestionCircle />}
-                    />
-                    <MenuItem
                         name="Options"
-                        route="/logout"
+                        route="/options"
                         icon={<FaSignOutAlt />}
                     />
                 </div>
