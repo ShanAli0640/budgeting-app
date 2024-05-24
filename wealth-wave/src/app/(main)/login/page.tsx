@@ -1,19 +1,13 @@
 "use client";
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Login() {
 
     return (
         <>
-            <a href="/api/auth/login">
+            <Link href="/api/auth/login" passHref>
                 yo
-            </a>
-            <p> howdy </p>
-            <Link href="/dashboard" passHref>
-                <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-                    Login
-                </button>
             </Link>
         </>
     )
